@@ -30,7 +30,7 @@ void ArcGameMode::REPORT_GAME()
 
 	int numPlayers = 1;
 
-	FString qstring("?op=42ad5d32-9fec-4959-ad2e-203d422134a7&v=0.0.6&p=" + FString::FromInt(numPlayers) + "&pmax=6" + "&n=PPC_DEDICATED");
+	FString qstring("?op=42ad5d32-9fec-4959-ad2e-203d422134a7&v=0.0.3&p=" + FString::FromInt(numPlayers) + "&pmax=6" + "&n=RCTRAINER");
 
 	TSharedRef <IHttpRequest> Request = Http->CreateRequest();
 	Request->SetVerb("POST");

@@ -13,7 +13,7 @@ void AMenuController::REFRESH()
 
 	TSharedRef <IHttpRequest> Request = Http->CreateRequest();
 	Request->SetVerb("POST");
-	Request->SetURL("http://pewpewcraft.com/include/_apps/_gameserver/getgames.aspx");
+	Request->SetURL("http://pewpewcraft.com/include/_apps/_gameserver/getgames.aspx?op=42ad5d32-9fec-4959-ad2e-203d422134a7");
 	Request->SetContentAsString("");
 	Request->SetHeader("User-Agent", "ppcGameClient/0.0.6");
 	Request->SetHeader("Content-Type", "application/x-www-form-urlencoded");
