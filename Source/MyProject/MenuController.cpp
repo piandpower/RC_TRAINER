@@ -79,5 +79,5 @@ void AMenuController::REFRESH_RESPONSE(FHttpRequestPtr Request, FHttpResponsePtr
 
 void AMenuController::JOIN_GAME(FString URL, FString CHARACTER_NAME)
 {
-	this->ClientTravel(URL + "?CHARACTER_NAME" + CHARACTER_NAME, ETravelType::TRAVEL_Absolute, false, FGuid());
+	this->ClientTravel(URL + "?CHARACTER_NAME=" + CHARACTER_NAME, ETravelType::TRAVEL_Absolute, false, FGuid());
 }
